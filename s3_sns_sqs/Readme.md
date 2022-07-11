@@ -45,34 +45,33 @@ aws --endpoint-url=http://localhost:4566 s3api put-bucket-notification --bucket 
 ````
 
 
+------
+### Other commands:
 
-Other commands:
-
-To test the SNS and SQS integration:
-Send messsages to SNS
+- Send messsages to SNS
 ```sh
 aws sns publish --endpoint-url=http://localhost:4566 --topic-arn arn:aws:sns:eu-central-1:000000000000:sns-example-topic --message "Hello World" --profile test-profile --region eu-central-1 --output json | cat
 ```
 
-Read messages from queue
+- Read messages from queue
 ```sh
 aws --endpoint-url=http://localhost:4566 sqs receive-message --queue-url http://localhost:4566/000000000000/sqs-example-queue --profile test-profile --region eu-central-1 --output json | cat
 ```
 
 
-To List the queues available
+- List the queues available
 ```sh
 echo "########### Listing queues ###########"
 aws --endpoint-url=http://localhost:4566 sqs list-queues
 ```
 
-To check the trigger configuration
+- Check the trigger configuration
 ```sh
 aws --endpoint-url=http://localhost:4566 s3api get-bucket-notification-configuration\
     --bucket test1
 ```
 
-To Upload an object to the bucket to trigger the message to the SNS
+- Upload an object to the bucket to trigger the message to the SNS
 ```sh
 aws --endpoint-url=http://localhost:4566 s3api put-object --bucket test1 --key index.html --body index.html
 ````
