@@ -1,0 +1,12 @@
+{
+   "Type":"Notification",
+   "MessageId":"3233f291-c01f-5367-a0a6-a9cbfde3ae88",
+   "TopicArn":"arn:aws:sns:us-west-2:551219137456:bank-topic",
+   "Subject":"Amazon S3 Notification",
+   "Message":"{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"us-west-2\",\"eventTime\":\"2022-07-26T19:08:43.077Z\",\"eventName\":\"ObjectCreated:Put\",\"userIdentity\":{\"principalId\":\"A23FQRGYK2QHZ7\"},\"requestParameters\":{\"sourceIPAddress\":\"189.203.101.13\"},\"responseElements\":{\"x-amz-request-id\":\"BCM8K7JS515MMF0H\",\"x-amz-id-2\":\"i86oz4faNyeu2xgAWtOGKezPmcD4TmyiWdJOt4ZSGUWBwqdCjpo1rPVRGt/eI/MlGucmiJlHGXx34+epa+5T5+X8cFLbaWMNrMUa+D5ZSsI=\"},\"s3\":{\"s3SchemaVersion\":\"1.0\",\"configurationId\":\"bank-event\",\"bucket\":{\"name\":\"bank-bucket\",\"ownerIdentity\":{\"principalId\":\"A23FQRGYK2QHZ7\"},\"arn\":\"arn:aws:s3:::bank-bucket\"},\"object\":{\"key\":\"from-bank/Copia+de+example+4.txt\",\"size\":14,\"eTag\":\"c520d72f06abab0cb406d9fbe503cee3\",\"sequencer\":\"0062E03BBB0F90C0E6\"}}}]}",
+   "Timestamp":"2022-07-26T19:08:44.190Z",
+   "SignatureVersion":"1",
+   "Signature":"DNs04Lafl3SmSgOL865qB0U5+ayPuckIL+zz8gZJREEZRq97llI9Xc1tutqfSodMT+hFAjBvIx83E3FqkjbnzN6YfphI+3OWjinqeMgPRzsgI4g+aivFY2+iV6xySOVuJt/u3pUqIh2ifgEEe4S8aqhbs7zAedIOEipF6rS6L8OPhHw/bpqG6bOZS9eoGB3QOe/SbOWNmWok6cKh39BGm1cBiHXh0FMJn/4H/Pnal31xjMC0aZn3yFvROHB5N9CU17aovLNL/BcnWJaYrTG1AkltwXD4ZI4YE2ZLBU+ECJT0SymA0+0sYWRnQMmsLyHUJmuE9qQypTrl+M3GYuxWbg==",
+   "SigningCertURL":"https://sns.us-west-2.amazonaws.com/SimpleNotificationService-7ff5318490ec183fbaddaa2a969abfda.pem",
+   "UnsubscribeURL":"https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:551219137456:bank-topic:829fb4ba-e1ce-4262-a0b0-92366220b8df"
+}
